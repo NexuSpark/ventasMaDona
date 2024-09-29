@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ventas MaDona</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="simple.css" />
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>
+          <img src="favicon.png" alt="Ventas MaDona" />
+          Ventas MaDona
+          <img src="favicon.png" alt="Ventas MaDona" />
+        </h1>
+        <p>Planilla de ventas de todas las sucursales</p>
+      </hgroup>
+    </header>
+    <main>
+      <form align="center">
+        <fieldset id="inputs">
+          <legend>Ingresos de las sucursales</legend>
+          <label for="s1">Sucursal 1</label>
+          <input type="number" step="0.01" id="s1" name="s1" />
+          <label for="s2">Sucursal 2</label>
+          <input type="number" step="0.01" id="s2" name="s2" />
+          <label for="s3">Sucursal 3</label>
+          <input type="number" step="0.01" id="s3" name="s3" />
+          <label for="s4">Sucursal 4</label>
+          <input type="number" step="0.01" id="s4" name="s4" />
+        </fieldset>
+        <div display="flex">
+          <button type="submit">Calcular</button>
+          <button type="reset">Limpiar</button>
+          <aside>
+            <p id="result">Total ventas: $0</p>
+          </aside>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
